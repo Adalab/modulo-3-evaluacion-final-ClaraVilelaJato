@@ -7,6 +7,7 @@ const getCharactersFromApi = () => {
           photo: character.image,
           name: character.name,
           specie: character.species,
+          id: character.id,
         };
       })
     );

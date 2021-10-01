@@ -2,6 +2,7 @@ import '../styles/App.css';
 import api from '../services/charactersApi';
 import { useEffect, useState } from 'react';
 import CharactersList from './CharactersList';
+import Filters from './Filters';
 
 function App() {
   const [data, setData] = useState([]);
@@ -37,33 +38,12 @@ function App() {
       <h1 className='title--big'>Rick and Morty</h1>
       <div className='col2'>
         <section>
-          <form>
-            <label className='form__label display-block' htmlFor='name'>
-              Filtrar por nombre:
-            </label>
-            <input
-              className='form__input-text'
-              type='text'
-              name='name'
-              id='name'
-              value={searchName}
-              onChange={handleSearchName}
-            />
-            <label className='form__label display-block' htmlFor='specie'>
-              Especie:
-            </label>
-            <select
-              className='form__input-text'
-              name='gender'
-              id='gender'
-              value={searchSpecie}
-              onChange={handleSearchSpecie}
-            >
-              <option value='all'>Todos</option>
-              <option value='Human'>Human</option>
-              <option value='Alien'>Alien</option>
-            </select>
-          </form>
+          <Filters
+            searchName={searchName}
+            searchSpecie={searchSpecie}
+            handleSearchName={handleSearchName}
+            handleSearchSpecie={handleSearchSpecie}
+          />
         </section>
         <section>
           <CharactersList data={filteredData} />
