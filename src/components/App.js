@@ -6,7 +6,7 @@ import CharactersList from './CharactersList';
 function App() {
   const [data, setData] = useState([]);
   const [searchName, setSearchName] = useState('');
-  const [searchSpecie, setSearchSpecie] = useState('');
+  const [searchSpecie, setSearchSpecie] = useState('all');
 
   useEffect(() => {
     api.getCharactersFromApi().then((initialData) => {
@@ -23,6 +23,15 @@ function App() {
     setSearchSpecie(ev.currentTarget.value);
   };
 
+  const filteredData = data
+    .filter((character) =>
+      character.name
+        .toLocaleLowerCase()
+        .includes(searchName.toLocaleLowerCase())
+    )
+    .filter(
+      (character) => searchSpecie === 'all' || searchSpecie === character.specie
+    );
   return (
     <div>
       <h1 className='title--big'>Rick and Morty</h1>
@@ -51,13 +60,13 @@ function App() {
               onChange={handleSearchSpecie}
             >
               <option value='all'>Todos</option>
-              <option value='human'>Human</option>
-              <option value='male'>Allien</option>
+              <option value='Human'>Human</option>
+              <option value='Alien'>Alien</option>
             </select>
           </form>
         </section>
         <section>
-          <CharactersList data={data} />
+          <CharactersList data={filteredData} />
         </section>
       </div>
     </div>
