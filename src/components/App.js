@@ -18,7 +18,7 @@ function App() {
       setData(initialData);
       ls.set('character', initialData);
     });
-  }, [searchName]);
+  }, []);
 
   const handleSearchName = (ev) => {
     setSearchName(ev.currentTarget.value);
