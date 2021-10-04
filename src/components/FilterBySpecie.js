@@ -1,7 +1,9 @@
+import '../styles/components/form.scss';
+
 const FilterBySpecie = (props) => {
   return (
     <>
-      <label className='form__label display-block' htmlFor='specie'>
+      <label className='form__label-specie' htmlFor='specie'>
         Especie:
       </label>
       <select
