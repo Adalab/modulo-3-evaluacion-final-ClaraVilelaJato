@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-
+import '../styles/components/charactercard.scss';
 const CharacterCard = (props) => {
   return (
     <>
-      <Link to={`./character/${props.characterData.id}`}>
+      <Link to={`./character/${props.characterData.id} `}>
         <img
           className='card__img'
           src={props.characterData.photo}

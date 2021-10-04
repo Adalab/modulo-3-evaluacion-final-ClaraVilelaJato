@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-
 import dead from '../images/ataud (1).png';
 import alive from '../images/heartbeat (1).png';
 import unknown from '../images/clue (1).png';
 import alien from '../images/alien.png';
 import human from '../images/planet-earth.png';
-
+import background from '../images/rickmorty.jpeg';
 const CharacterDetail = (props) => {
   const getStatus = () => {
     if (props.character.status === 'Dead') {
@@ -28,7 +27,12 @@ const CharacterDetail = (props) => {
   };
 
   if (props.character === undefined) {
-    return <p>Este personaje no existe! Vete a ver la serie!</p>;
+    return (
+      <div>
+        <p>Este personaje no existe! Vete a ver la serie!</p>
+        <img src={background} alt='Rick y morty te miran mal' />
+      </div>
+    );
   } else {
     return (
       <>

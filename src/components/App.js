@@ -1,4 +1,5 @@
 import '../styles/App.scss';
+import '../styles/components/main.scss';
 import api from '../services/charactersApi';
 import ls from '../services/ls';
 import { useEffect, useState } from 'react';
@@ -7,6 +8,7 @@ import Filters from './Filters';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import CharacterDetail from './CharacterDetail';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   const [data, setData] = useState([]);
@@ -50,7 +52,7 @@ function App() {
     <div>
       <Header></Header>
       <h1 className='title--big'>Rick and Morty</h1>
-      <div className='col2'>
+      <div className='main'>
         <Switch>
           <Route path='/character/:id'>
             <section>
@@ -75,6 +77,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </div>
   );
 }

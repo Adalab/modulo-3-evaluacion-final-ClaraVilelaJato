@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 7px 11px 14px #7fc551;
+  background-color: #34acc5;
+
+  &__name {
+    font-family: 'GetSwifty';
+    font-size: 1.1em;
+    background-color: darkgray;
+    color: black;
+    text-shadow: 1px black;
+    padding: 10px;
+  }
+  &__img {
+    width: 100%;
+    padding: 5px;
+  }
+  &__specie {
+    padding-bottom: 5px;
+    font-family: 'GetSwifty';
+    background-color: darkgray;
+    color: whitesmoke;
+  }
+}

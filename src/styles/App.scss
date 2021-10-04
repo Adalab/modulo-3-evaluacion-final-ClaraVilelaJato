@@ -1,0 +1,28 @@
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/characterslist.scss';
+@import './components/charactercard.scss';
+@import './components/characterdetail.scss';
+@import './components/main.scss';
+@import './components/form.scss';
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-family: 'GetSwifty';
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'GetSwifty';
+  src: url('../tipos/get_schwifty.ttf');
+}
+
+.title--big {
+  display: none;
+}
