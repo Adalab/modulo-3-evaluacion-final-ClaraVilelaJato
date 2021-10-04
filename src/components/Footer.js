@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = (props) => {
   return (
     <footer className='footer'>
       <small>Clara Vilela Jato </small>

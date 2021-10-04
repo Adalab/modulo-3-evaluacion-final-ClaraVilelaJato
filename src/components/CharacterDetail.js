@@ -5,6 +5,8 @@ import unknown from '../images/clue (1).png';
 import alien from '../images/alien.png';
 import human from '../images/planet-earth.png';
 import background from '../images/rickmorty.jpeg';
+import '../styles/components/characterdetail.scss';
+
 const CharacterDetail = (props) => {
   const getStatus = () => {
     if (props.character.status === 'Dead') {
@@ -28,51 +30,52 @@ const CharacterDetail = (props) => {
 
   if (props.character === undefined) {
     return (
-      <div>
+      <div className='wrong'>
         <p>Este personaje no existe! Vete a ver la serie!</p>
         <img src={background} alt='Rick y morty te miran mal' />
       </div>
     );
   } else {
     return (
-      <>
-        <img
-          className='card__img'
-          src={props.character.photo}
-          alt={props.character.name}
-        />
-        <ul className='character_card'>
-          <li>Name: {props.character.name}</li>
-          <li>
-            Status: {props.character.status}
-            <img
-              className='card-detail__status'
-              src={getStatus()}
-              alt={props.character.status}
-              title={props.character.status}
-            />
-          </li>
-
-          <li>
-            Especie: {props.character.specie}
-            <img
-              className='card-detail__status'
-              src={getSpecie()}
-              alt={props.character.specie}
-              title={props.character.specie}
-            />
-          </li>
-          <li>Origen: {props.character.planet}</li>
-          <li>Episodios: {props.character.episodes}</li>
-        </ul>
-        <div className='back'>
-          <Link to='/'>
-            <button className='back__button' text='Back'>
-              Back
-            </button>
-          </Link>
+      <div className='container'>
+        <div className='carddetail'>
+          <img
+            className='carddetail__img'
+            src={props.character.photo}
+            alt={props.character.name}
+          />
+          <ul className='carddetail__list'>
+            <li className='name'>Name: {props.character.name}</li>
+            <li className='status'>
+              Status: {props.character.status}
+              <img
+                className='status__icon'
+                src={getStatus()}
+                alt={props.character.status}
+                title={props.character.status}
+              />
+            </li>
+            <li className='specie'>
+              Especie: {props.character.specie}
+              <img
+                className='specie__icon'
+                src={getSpecie()}
+                alt={props.character.specie}
+                title={props.character.specie}
+              />
+            </li>
+            <li className='origin'>Origen: {props.character.planet}</li>
+            <li>Episodios: {props.character.episodes}</li>
+          </ul>
+          <div className='back'>
+            <Link to='/'>
+              <button className='back__button' text='Back'>
+                Back
+              </button>
+            </Link>
+          </div>
         </div>
-      </>
+      </div>
     );
   }
 };
