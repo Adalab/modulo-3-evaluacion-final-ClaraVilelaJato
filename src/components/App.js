@@ -1,4 +1,4 @@
-import '../styles/App.css';
+import '../styles/App.scss';
 import api from '../services/charactersApi';
 import ls from '../services/ls';
 import { useEffect, useState } from 'react';
@@ -6,6 +6,7 @@ import CharactersList from './CharactersList';
 import Filters from './Filters';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import CharacterDetail from './CharacterDetail';
+import Header from './Header';
 
 function App() {
   const [data, setData] = useState([]);
@@ -21,6 +22,7 @@ function App() {
   }, []);
 
   const handleSearchName = (ev) => {
+    ev.preventDefault();
     setSearchName(ev.currentTarget.value);
   };
 
@@ -46,6 +48,7 @@ function App() {
     );
   return (
     <div>
+      <Header></Header>
       <h1 className='title--big'>Rick and Morty</h1>
       <div className='col2'>
         <Switch>
