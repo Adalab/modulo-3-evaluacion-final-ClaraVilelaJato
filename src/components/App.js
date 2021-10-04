@@ -49,10 +49,10 @@ function App() {
       (character) => searchSpecie === 'all' || searchSpecie === character.specie
     );
   return (
-    <div>
+    <div className='main'>
       <Header></Header>
       <h1 className='title--big'>Rick and Morty</h1>
-      <div className='main'>
+      <div>
         <Switch>
           <Route path='/character/:id'>
             <section>
