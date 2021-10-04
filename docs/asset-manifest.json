@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.b0d0b139.chunk.css",
-    "main.js": "./static/js/main.0486bffb.chunk.js",
-    "main.js.map": "./static/js/main.0486bffb.chunk.js.map",
+    "main.css": "./static/css/main.5ffb3e57.chunk.css",
+    "main.js": "./static/js/main.6fe02cb4.chunk.js",
+    "main.js.map": "./static/js/main.6fe02cb4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7ad783a2.js",
     "runtime-main.js.map": "./static/js/runtime-main.7ad783a2.js.map",
     "static/js/2.8e52640c.chunk.js": "./static/js/2.8e52640c.chunk.js",
     "static/js/2.8e52640c.chunk.js.map": "./static/js/2.8e52640c.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.b0d0b139.chunk.css.map": "./static/css/main.b0d0b139.chunk.css.map",
+    "static/css/main.5ffb3e57.chunk.css.map": "./static/css/main.5ffb3e57.chunk.css.map",
     "static/js/2.8e52640c.chunk.js.LICENSE.txt": "./static/js/2.8e52640c.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "./static/media/get_schwifty.c3d1dfc6.ttf",
+    "static/media/main.scss": "./static/media/2_1.3453c941.bin",
     "static/media/Rick_and_Morty_-_logo_(English).de13d484.png": "./static/media/Rick_and_Morty_-_logo_(English).de13d484.png",
+    "static/media/App.scss": "./static/media/get_schwifty.c3d1dfc6.ttf",
+    "static/media/ricklogofinal.60e65c29.png": "./static/media/ricklogofinal.60e65c29.png",
     "static/media/rickmorty.d7744e79.jpeg": "./static/media/rickmorty.d7744e79.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.7ad783a2.js",
     "static/js/2.8e52640c.chunk.js",
-    "static/css/main.b0d0b139.chunk.css",
-    "static/js/main.0486bffb.chunk.js"
+    "static/css/main.5ffb3e57.chunk.css",
+    "static/js/main.6fe02cb4.chunk.js"
   ]
 }
