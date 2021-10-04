@@ -11,6 +11,10 @@
   width: 40%;
   margin-bottom: 20%;
   box-shadow: 1px 1px 20px 8px #7fc551;
+  font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
 
   &__list {
     flex-direction: column;
@@ -36,13 +40,18 @@
 .status {
   color: whitesmoke;
   &__icon {
-    width: 30px;
+    @media (min-width: 768px) {
+      width: 30px;
+    }
   }
 }
 .specie {
   color: whitesmoke;
   &__icon {
-    width: 20px;
+    width: 15px;
+    @media (min-width: 768px) {
+      width: 20px;
+    }
   }
 }
 .origin {

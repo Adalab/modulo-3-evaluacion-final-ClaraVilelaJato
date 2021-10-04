@@ -6,4 +6,7 @@
   gap: 40px;
   margin-left: 13%;
   padding-bottom: 150px;
+  @media (min-width: 768px) {
+    margin-left: 20%;
+  }
 }

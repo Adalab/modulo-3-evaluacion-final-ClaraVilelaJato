@@ -1,7 +1,8 @@
 .main {
-  background-image: radial-gradient(
-    rgb(219, 207, 207) 5%,
-    rgb(238, 238, 214) 15%,
-    rgb(216, 231, 216) 60%
-  );
+  background-image: linear-gradient(
+      to top,
+      rgba(245, 246, 252, 0.877),
+      rgba(230, 229, 225, 0.61)
+    ),
+    url('../../images/2_1');
 }

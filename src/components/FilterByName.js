@@ -1,7 +1,7 @@
 const FilterByName = (props) => {
   return (
     <>
-      <label className='form__label display-block' htmlFor='name'>
+      <label className='form__label-name' htmlFor='name'>
         Filtrar por nombre:
       </label>
       <input
