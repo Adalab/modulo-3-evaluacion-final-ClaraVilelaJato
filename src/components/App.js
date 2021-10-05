@@ -6,9 +6,11 @@ import { useEffect, useState } from 'react';
 import CharactersList from './CharactersList';
 import Filters from './Filters';
 import { Route, Switch, useRouteMatch } from 'react-router';
+import { Link } from 'react-router-dom';
 import CharacterDetail from './CharacterDetail';
 import Header from './Header';
 import Footer from './Footer';
+import background from '../images/rickmorty.jpeg';
 
 function App() {
   const [data, setData] = useState([]);
@@ -80,7 +82,17 @@ function App() {
             </section>
           </Route>
           <Route>
-            <section>¡El personaje que buscas no existe!</section>
+            <div className='wrong'>
+              <section>¡El personaje que buscas no existe!</section>
+              <img src={background} alt='Rick y morty te miran mal' />
+              <div className='back'>
+                <Link to='/'>
+                  <button className='back__button' text='Back'>
+                    Volver
+                  </button>
+                </Link>
+              </div>
+            </div>
           </Route>
         </Switch>
       </div>
