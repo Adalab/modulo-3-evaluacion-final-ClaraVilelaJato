@@ -5,13 +5,14 @@
   flex-wrap: wrap;
 
   &__label-specie {
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 17px;
     -webkit-text-stroke: 1px #164743;
     color: #35afc7;
     text-shadow: 1px 5px 2px #7fc551;
     @media (min-width: 768px) {
       font-size: 30px;
+      margin-left: 20px;
     }
   }
   &__label-name {
