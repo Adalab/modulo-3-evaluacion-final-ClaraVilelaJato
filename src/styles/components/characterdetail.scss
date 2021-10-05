@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 60px;
   justify-content: center;
   text-align: center;
   text-transform: capitalize;
@@ -10,12 +10,21 @@
   padding: 30px 5px 15px 5px;
   width: 40%;
   margin-bottom: 150px;
+  margin-top: 20px;
   box-shadow: 1px 1px 20px 8px #7fc551;
   font-size: 13px;
+  animation: pulse 5s infinite;
   @media (min-width: 768px) {
-    font-size: 25px;
+    font-size: 20px;
   }
-
+  @keyframes pulse {
+    0% {
+      background-color: #7fc551;
+    }
+    100% {
+      background-color: #34adc5c9;
+    }
+  }
   &__list {
     flex-direction: column;
     text-align: center;
@@ -30,7 +39,10 @@
     width: 80%;
     margin: auto;
     border: solid 5px rgba(245, 245, 245, 0.925);
-    border-radius: 5px;
+    border-radius: 80px;
+    @media (min-width: 768px) {
+      width: 70%;
+    }
   }
 }
 .name {

@@ -45,7 +45,7 @@ const CharacterDetail = (props) => {
             alt={props.character.name}
           />
           <ul className='carddetail__list'>
-            <li className='name'>Name: {props.character.name}</li>
+            <li className='name'>Nombre: {props.character.name}</li>
             <li className='status'>
               Status: {props.character.status}
               <img
@@ -70,7 +70,7 @@ const CharacterDetail = (props) => {
           <div className='back'>
             <Link to='/'>
               <button className='back__button' text='Back'>
-                Back
+                Volver
               </button>
             </Link>
           </div>

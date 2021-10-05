@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 
   &__label-specie {
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: 17px;
     -webkit-text-stroke: 1px #164743;
     color: #35afc7;
@@ -26,5 +26,6 @@
   &__input-text {
     border: none;
     background-color: #7fc551b4;
+    margin-bottom: 5px;
   }
 }

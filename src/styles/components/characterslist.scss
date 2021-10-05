@@ -4,9 +4,12 @@
   grid-template-rows: 1.5fr 1.5fr;
   grid-gap: 40px;
   gap: 40px;
-  margin-left: 13%;
+  margin-left: 15%;
   padding-bottom: 150px;
   @media (min-width: 768px) {
-    margin-left: 20%;
+    margin-left: 17%;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 5%;
   }
 }

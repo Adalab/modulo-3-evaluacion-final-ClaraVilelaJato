@@ -17,7 +17,6 @@ function App() {
 
   useEffect(() => {
     api.getCharactersFromApi().then((initialData) => {
-      console.log(initialData);
       setData(initialData);
       ls.set('character', initialData);
     });
@@ -37,7 +36,6 @@ function App() {
   const selectedCharacter = data.find(
     (character) => character.id === parseInt(characterId)
   );
-  console.log(selectedCharacter);
 
   const filteredData = data
     .sort(function (a, b) {
