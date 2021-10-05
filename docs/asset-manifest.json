@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.5ffb3e57.chunk.css",
-    "main.js": "./static/js/main.6fe02cb4.chunk.js",
-    "main.js.map": "./static/js/main.6fe02cb4.chunk.js.map",
+    "main.css": "./static/css/main.5074cd58.chunk.css",
+    "main.js": "./static/js/main.a2788e28.chunk.js",
+    "main.js.map": "./static/js/main.a2788e28.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7ad783a2.js",
     "runtime-main.js.map": "./static/js/runtime-main.7ad783a2.js.map",
     "static/js/2.8e52640c.chunk.js": "./static/js/2.8e52640c.chunk.js",
     "static/js/2.8e52640c.chunk.js.map": "./static/js/2.8e52640c.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.5ffb3e57.chunk.css.map": "./static/css/main.5ffb3e57.chunk.css.map",
+    "static/css/main.5074cd58.chunk.css.map": "./static/css/main.5074cd58.chunk.css.map",
     "static/js/2.8e52640c.chunk.js.LICENSE.txt": "./static/js/2.8e52640c.chunk.js.LICENSE.txt",
     "static/media/main.scss": "./static/media/2_1.3453c941.bin",
     "static/media/Rick_and_Morty_-_logo_(English).de13d484.png": "./static/media/Rick_and_Morty_-_logo_(English).de13d484.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.7ad783a2.js",
     "static/js/2.8e52640c.chunk.js",
-    "static/css/main.5ffb3e57.chunk.css",
-    "static/js/main.6fe02cb4.chunk.js"
+    "static/css/main.5074cd58.chunk.css",
+    "static/js/main.a2788e28.chunk.js"
   ]
 }
